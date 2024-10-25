@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
-*, html{
+/* *, html{
     padding: 0;
     margin: 0;
 }
@@ -17,7 +17,6 @@ body{
     align-items: center;
     height: 100vh;
     justify-content: flex-start;
-    max-width: 600px;
 }
 
 .wrapper img{
@@ -72,4 +71,87 @@ body{
 button:hover{
     color: #859F3D;
     box-shadow: 5px 5px 0px 0px rgba(52, 80, 55, 0.788);
-}
+} */
+
+
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensures consistent sizing across devices */
+  }
+  
+  body {
+    background-color: black;
+    font-family: "Pixelify Sans", sans-serif;
+    color: white;
+    min-height: 100vh; /* Ensures content fills the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Ensures text is centered on smaller screens */
+  }
+  
+  .wrapper img {
+    border-radius: 50%;
+    max-width: 200px; /* Adjust max-width for responsiveness */
+    padding: 1rem;
+  }
+  
+  .wrapper h5 {
+    font-size: 3vw; /* Adjust font size for responsiveness */
+  }
+  
+  .wrapper p {
+    font-size: 2vw; /* Adjust font size for responsiveness */
+    padding: 0.5rem;
+  }
+  
+  .icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .icon a {
+    text-decoration: none;
+  }
+  
+  .icon i {
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+  }
+  
+  .wrapper button {
+    font-family: "Pixelify Sans", sans-serif;
+    border-radius: 10px; /* Simplified border-radius for better responsiveness */
+    background-color: black;
+    border: 1px solid white;
+    margin-top: 10px;
+    color: white;
+    padding: 10px 20px; /* Adjust padding for better button size on smaller screens */
+    cursor: pointer;
+    transition: all 500ms;
+  }
+  
+  button:hover {
+    color: #859F3D;
+    box-shadow: 5px 5px 0px 0px rgba(52, 80, 55, 0.788);
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .wrapper h5 {
+      font-size: 5vw; /* Adjust font size for smaller screens */
+    }
+  
+    .wrapper p {
+      font-size: 3vw; /* Adjust font size for smaller screens */
+    }
+  }
