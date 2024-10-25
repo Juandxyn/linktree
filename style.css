@@ -27,12 +27,12 @@ body{
 }
 
 .wrapper h5{
-    font-size: 1.5vw;
+    font-size: 5vw;
 }
 
 .wrapper p{
     text-align: center;
-    font-size: 1vw;
+    font-size: 2vw;
     padding: 0.5rem;
 }
 
